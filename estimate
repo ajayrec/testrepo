@@ -1,0 +1,6 @@
+=IF(J5='Unit BreakDown'!B$29,'Unit BreakDown'!H$29,IF(J5='Unit BreakDown'!B$30,'Unit BreakDown'!H$30,IF(J5='Unit BreakDown'!B$31,'Unit BreakDown'!H$31,IF(J5='Unit BreakDown'!B$32,'Unit BreakDown'!H$32,IF(J5='Unit BreakDown'!B$33,'Unit BreakDown'!H$33,IF(J5='Unit BreakDown'!B$34,'Unit BreakDown'!H$34,IF(J5='Unit BreakDown'!B$35,'Unit BreakDown'!H$35,IF(J5='Unit BreakDown'!B$36,'Unit BreakDown'!H$36,IF(J5='Unit BreakDown'!B$37,'Unit BreakDown'!H$37,IF(J5='Unit BreakDown'!B$38,'Unit BreakDown'!H$38))))))))))*K5
+
+=IF(ISNA(IF($B5="",SUM(INDIRECT("Channels!"&"L"&$AC4):Channels!$L$1000),SUM(INDIRECT("Channels!"&"L"&$AC4):INDIRECT("Channels!"&"L"&$AD5)))),"",IF($B5="",SUM(INDIRECT("Channels!"&"L"&$AC4):Channels!$L$1000),SUM(INDIRECT("Channels!"&"L"&$AC4):INDIRECT("Channels!"&"L"&$AD5))))
+
+=IF(ISNA(VLOOKUP(1,Channels!$A:$B,2,FALSE)),"",VLOOKUP(1,Channels!$A:$B,2,FALSE))
+
